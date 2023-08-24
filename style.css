@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+.header {
+    background: rgb(230, 176, 77);
+    padding-inline: 16px;
+}
+
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: white;
+    padding-block: 16px;
+}
+
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid white;
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    display: block;
+    content:" " ;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+}
+
+@media (max-width:750px) {
+    .hamburguer {
+        display: block;
+    }
+
+}

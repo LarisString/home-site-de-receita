@@ -30,12 +30,15 @@ a {
     display: flex;
     gap: 32px;
     list-style: none;
-}
-
-.nav-list a {
     font-size: 18px;
     color: white;
     padding-block: 16px;
+   
+}
+
+.hero {
+    height: calc(100vh-70px);
+    background: center / cover no-repeat url(./Assets/FOTOS\ IG\ \(1\).png);
 }
 
 .hamburguer {
@@ -59,6 +62,7 @@ a {
 @media (max-width:750px) {
     .hamburguer {
         display: block;
+        z-index: 1;
     }
 
     .nav-list {

@@ -37,7 +37,7 @@ a {
 }
 
 .hero {
-    height: calc(100vh-70px);
+    height: calc(100vh - 70px);
     background: center / cover no-repeat url(./Assets/FOTOS\ IG\ \(1\).png);
 }
 

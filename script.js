@@ -1,15 +1,8 @@
-
-document.getElementById("botao").disabled = true;
-
-function toggle() {
-    document.getElementById("nav-list").addEventListener("click", () => { 
-    
-
-
-    var lista = document.getElementById("nav").value;
-
-    if (lista !== null && document.getElementById("nav") !== 'lista') {
-        document.getElementById("botao").disabled = false;
-    } else {document.getElementById("botao").disabled = true;
-    }});
+/* Quando o usuário clica no Ícone, abre novamente o Menu só que desta vez com a formatação que definimos no media screen */
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
 }
+
+/*
+OBS: Esta função deverá ser adicionada dentro de um Script na sua página HTML, ou dentro de uma chama de arquivo .js
+*/

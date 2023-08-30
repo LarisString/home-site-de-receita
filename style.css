@@ -1,92 +1,121 @@
-*{
-    margin: 0;
-    padding: 0;
+*{font-family:calibri;margin:0;padding:0;}
+
+h1,h2{
+  padding-top:100px;
+  padding-bottom:10px;
 }
 
-a {
+#centro{
+  line-height:5em;
+  text-align:center;
+  margin:0 auto;
+  font-size:1.30em;
+  justify-content: center;
+}
 
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
+#centro a{
+  color: black;
+  text-decoration:none; /*Remove o underline do Link a*/
+}
+
+body{background: center / cover no-repeat url(./Assets/FOTOS\ IG\ \(1\).png);font-family:calibri;font-size:1.30em;}
+
+/* Início da estilização do MENU RESPONSIVO classe: topnav */
+
+	/* Remove as margens, define tamanho do menu para 100%, e adiciona uma cor de fundo */
+	ul.topnav {
+    background: #f5ad4e;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 3em;
+		line-height: 4em;
+        width:100%;
+	}
+
+	/* Coloca os itens da lista do Menu lado a lado, e flutua os itens para a esquerda */
+	ul.topnav li {
+				display: block;
+				margin-left: 0.5em;
+                margin-right: 30px;
+				font-size: 0.9em;
+                float:right;
+	}
+
+	/* Estilo dos links dentro da lista */
+	ul.topnav li a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		height: 3em;
+		line-height: 3em;
+		padding: 0 0.3em 0 0.3em;
+		outline: 0;
+	}
+
+	/* Altera a cor do link quando passa o mouse em cima*/
+	ul.topnav li a:hover {color:#0b0b0b;}
+
+	/* Esconde os itens da lista quando a resolução da tela for pequena */
+	ul.topnav li.icon {display: none;}
+	
+	/* Quando a tela é menor do que 680 pixels de largura, ocultar todos os itens da lista. Mostra o item da lista que contém o link para abrir e fechar a nav superior (li.icon) */
+		@media screen and (max-width:680px) {
+		  ul.topnav li {display: none;}
+		  ul.topnav li.icon {
+			float: right;/*O ícone será exibido ao lado direito*/
+			display: block;
+		  }
+		}
+
     
-}
+		/*A classe responsiva é adicionada à ul superior com o JavaScript quando o usuário clica no ícone. Esta classe faz com que os itens principais do menu fiquem ok em telas menores */
+		@media screen and (max-width:680px) {
+            ul.topnav.responsive {
+                position: relative;
+              background: color #f1ba4d; /*Fundo cinza*/
+              height:auto;
+              padding-top:15px;
+              padding-bottom:10px;
+              line-height:5px;
+              width:100%;
+              
+              transition: 2s ease-in-out;
+            }
+            ul.topnav.responsive li.icon {
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+            ul.topnav.responsive li {
+               text-align:center; 
+               float: none;
+               padding:0;
+               display: inline;
+              
+            }
+            ul.topnav.responsive li a {
+              display: block;
+              padding:0;
+              text-align: left;
+              line-height:30px;
+              text-align:center;
+            }
+          } /*FIM DO MENU RESPONSIVO*/
 
-.header {
-    background: rgb(230, 176, 77);
-    padding-inline: 16px;
-}
-
-
-.nav {
-    max-width: 1280px;
-    height: 70px;
-    margin-inline: auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-list {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-    font-size: 18px;
-    color: white;
-    padding-block: 16px;
-   
-}
-
-.hero {
-    height: calc(100vh - 70px);
-    background: center / cover no-repeat url(./Assets/FOTOS\ IG\ \(1\).png);
-}
-
-.hamburguer  {
-    display: none;
-    border: none;
-    background: none;
-    border-top: 3px solid white;
-    cursor: pointer;
-}
-
-.hamburguer::before,
-.hamburguer::after { 
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin-top: 5px;
-
-}
-
-@media (max-width:750px) {
-    .hamburguer {
-        display: block;
-        z-index: 1;
-    }
-
-    .nav-list {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgb(230, 176, 77);
-        clip-path: circle(100px at 90% - 15%);
-        transition: 1s ease-out;
-
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-    }
-
-    .nav.active .nav-list {
-        clip-path: circle(1500px at 90% - 15%);
-        pointer-events: all;
-
-    }
-
-}
+        h2 {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            font-size: 28px;
+            margin: 100px auto 10px;
+            padding-top: 40px;
+        }
+        p {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            font-size: 16px;
+            margin: 20px auto 10px;
+            padding-top: 40px;
+        }

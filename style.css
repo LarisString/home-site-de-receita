@@ -41,7 +41,7 @@ a {
     background: center / cover no-repeat url(./Assets/FOTOS\ IG\ \(1\).png);
 }
 
-.hamburguer {
+.hamburguer  {
     display: none;
     border: none;
     background: none;
@@ -50,13 +50,14 @@ a {
 }
 
 .hamburguer::before,
-.hamburguer::after {
+.hamburguer::after { 
+    content: " ";
     display: block;
-    content:" " ;
     width: 30px;
     height: 3px;
     background: white;
     margin-top: 5px;
+
 }
 
 @media (max-width:750px) {

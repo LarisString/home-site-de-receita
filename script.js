@@ -1,11 +1,15 @@
 
 document.getElementById("botao").disabled = true;
 
-document.getElementById("nav").addEventListener("click", () =>nav.classList.toggle("active"));
-    var lista = document.getElementById("nav-list").value;
+function toggle() {
+    document.getElementById("nav-list").addEventListener("click", () => { 
+    
 
-    if (document.getElementById("nav") !== null && document.getElementById("nav") !== 'lista') {
+
+    var lista = document.getElementById("nav").value;
+
+    if (lista !== null && document.getElementById("nav") !== 'lista') {
         document.getElementById("botao").disabled = false;
     } else {document.getElementById("botao").disabled = true;
+    }});
 }
-;

@@ -26,7 +26,7 @@ body{background: center / cover no-repeat url(./Assets/FOTOS\ IG\ \(1\).png);fon
 
 	/* Remove as margens, define tamanho do menu para 100%, e adiciona uma cor de fundo */
 	ul.topnav {
-    background: #f5ad4e;
+    background: #f1ba72;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -75,7 +75,7 @@ body{background: center / cover no-repeat url(./Assets/FOTOS\ IG\ \(1\).png);fon
 		@media screen and (max-width:680px) {
             ul.topnav.responsive {
                 position: relative;
-              background: color #f1ba4d; /*Fundo cinza*/
+              background: color #f1ba72; /*Fundo cinza*/
               height:auto;
               padding-top:15px;
               padding-bottom:10px;

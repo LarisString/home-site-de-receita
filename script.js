@@ -6,3 +6,4 @@ function myFunction() {
 /*
 OBS: Esta função deverá ser adicionada dentro de um Script na sua página HTML, ou dentro de uma chama de arquivo .js
 */
+
